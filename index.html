@@ -87,22 +87,72 @@
 					<h3 class="r-fit-text">Vous voulez voir à quoi ça ressemble ?</h3>
 				</section>
 				<section>
-					<h3>OpenTelemetry c'est quoi ?</h3>
+					<h3>2 problèmes !</h3>
+					<ul>
+						<li class="fragment">Problème de performance</li>
+						<li class="fragment">Erreur quelque part</li>
+					</ul>
 				</section>
 				<section data-auto-animate>
 					<h3 data-id="title">Une trace c'est quoi ?</h3>
 				</section>
 				<section data-auto-animate>
 					<h3 data-id="title">Une trace c'est quoi ?</h3>
-					<img src="trace.png">
+					<img data-id="schema" src="trace.png">
+				</section>
+				<section data-auto-animate data-auto-animate-restart>
+					<h3 data-id="title">Et une trace distribuée c'est quoi ?</h3>
 				</section>
 				<section data-auto-animate>
-					<h3>Et une trace distribuée c'est quoi ?</h3>
+					<h3 data-id="title">Et une trace distribuée c'est quoi ?</h3>
+					<img data-id="schema" src="trace_distribuee.png">
 				</section>
+				<section data-auto-animate data-auto-animate-restart>
+					<h3 data-id="title">OpenTelemetry</h3>
+				</section>				
 				<section data-auto-animate>
-					<h3>Et une trace distribuée c'est quoi ?</h3>
-					<img src="trace_distribuee.png">
-				</section>
+					<h3 data-id="title">OpenTelemetry</h3>
+					<div><img src="confopentelemetry2022.webp" width="400"></div>
+					<small><a href="https://www.youtube.com/watch?v=gnKm6qByGAY">https://www.youtube.com/watch?v=gnKm6qByGAY</a></small>
+				</section>				
+				<section data-auto-animate>
+					<h3 data-id="title">OpenTelemetry</h3>
+					<ul>
+						<li class="fragment">Projet créé en 2019</li>
+						<li class="fragment">Standard&nbsp;: Protocole OTLP</li>
+						<li class="fragment">Fournit un Collector</li>
+					</ul>
+				</section>				
+
+				<section>
+					<h3 class="r-fit-text">4 étapes !</h3>
+				</section>				
+
+				<section data-auto-animate>
+					<h3 data-id="title">Etape 1&nbsp: Choisir notre backend de stockage</h3>
+				</section>				
+				<section data-auto-animate>
+					<h3 data-id="title">Etape 1&nbsp: Choisir notre backend de stockage</h3>
+					<div><img src="trace_backends.png"></div>
+				</section>				
+				<section data-auto-animate>
+					<h3 data-id="title">Etape 1&nbsp: Choisir notre backend de stockage</h3>
+					<div><img src="otel-lgtm.png"></div>
+					<small><a href="https://github.com/grafana/docker-otel-lgtm">https://github.com/grafana/docker-otel-lgtm</a></small>
+				</section>				
+
+				<section data-auto-animate data-auto-animate-restart>
+					<h3 data-id="title">Etape 2&nbsp: Installer l'extension PHP OpenTelemetry</h3>
+				</section>				
+
+				<section data-auto-animate data-auto-animate-restart>
+					<h3 data-id="title">Etape 3&nbsp: Installer les packages d'auto-instrumentation</h3>
+				</section>				
+
+				<section data-auto-animate data-auto-animate-restart>
+					<h3 data-id="title">Etape 4&nbsp: Configurer OpenTelemetry dans les applications</h3>
+				</section>				
+
 				<section>
 					<h3>Pourquoi la recherche de performance ?</h3>
 				</section>
@@ -110,9 +160,15 @@
 					<h3>1.</h3>
 					<div>Améliorer l'expérience utilisateur</div>
 				</section>
-				<section>
-					<h3>2.</h3>
-					<div>Améliorer la performance économique</div>
+				<section data-auto-animate>
+					<h3 data-id="title">2.</h3>
+					<div data-id="subtitle">Améliorer la performance économique</div>
+				</section>
+				<section data-auto-animate>
+					<h3 data-id="title">2.</h3>
+					<div data-id="subtitle">Améliorer la performance économique</div>
+					<div><img src="impact_perfs_2010.png"></div>
+					<small>Source - https://www.seomix.fr/temps-chargement/ (23/07/2010)</small>
 				</section>
 				<section>
 					<h3>Et surtout 3.</h3>
