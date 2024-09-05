@@ -25,9 +25,7 @@
 			<div class="slides">
 				<section>
 					<h1 class="r-fit-text">De<br/>"0" à "tracing distribué"<br/> en quelques lignes de code,<br/> c'est possible !</h1>
-					<p style="border-top: 1px solid rgba(0, 0, 0, 0.1);
-					margin-top: 1.5rem;
-					padding-top: 1.5rem;"><small>Vincent Lepot - Forum PHP - 10 & 11 Octobre 2024</small></p>
+					<p style="border-top: 1px solid rgba(0, 0, 0, 0.1); margin-top: 1.5rem; padding-top: 1.5rem;"><small>Vincent Lepot - Forum PHP - 10 & 11 Octobre 2024</small></p>
 				</section>
 				<section>
 					<h3>Imaginons une application&nbsp;!</h3>
@@ -109,12 +107,12 @@
 				</section>
 				<section data-auto-animate data-auto-animate-restart>
 					<h3 data-id="title">OpenTelemetry</h3>
-				</section>				
+				</section>
 				<section data-auto-animate>
 					<h3 data-id="title">OpenTelemetry</h3>
 					<div><img src="confopentelemetry2022.webp" width="400"></div>
 					<small><a href="https://www.youtube.com/watch?v=gnKm6qByGAY">https://www.youtube.com/watch?v=gnKm6qByGAY</a></small>
-				</section>				
+				</section>
 				<section data-auto-animate>
 					<h3 data-id="title">OpenTelemetry</h3>
 					<ul>
@@ -122,11 +120,11 @@
 						<li class="fragment">Standard&nbsp;: Protocole OTLP</li>
 						<li class="fragment">Fournit un Collector</li>
 					</ul>
-				</section>				
+				</section>
 
 				<section>
 					<h3 class="r-fit-text">4 étapes !</h3>
-				</section>				
+				</section>
 
 				<section data-auto-animate>
 					<h3 data-id="title">Etape 1&nbsp: Choisir notre backend de stockage</h3>
@@ -139,19 +137,47 @@
 					<h3 data-id="title">Etape 1&nbsp: Choisir notre backend de stockage</h3>
 					<div><img src="otel-lgtm.png"></div>
 					<small><a href="https://github.com/grafana/docker-otel-lgtm">https://github.com/grafana/docker-otel-lgtm</a></small>
-				</section>				
+				</section>
 
 				<section data-auto-animate data-auto-animate-restart>
 					<h3 data-id="title">Etape 2&nbsp: Installer l'extension PHP OpenTelemetry</h3>
-				</section>				
+				</section>
+
+				<section data-auto-animate>
+					<h3 data-id="title">Etape 2&nbsp: Installer l'extension PHP OpenTelemetry</h3>
+					<pre><code data-trim data-noescape>
+					&lt;?php
+
+					OpenTelemetry\Instrumentation\hook(
+						DemoClass::class,
+						'run',
+						pre: ...,
+						post: ...
+					);
+					</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h3 data-id="title">Etape 2&nbsp: Installer l'extension PHP OpenTelemetry</h3>
+					<ul>
+						<li class="fragment">Nécessite PHP 8.0+</li>
+						<li class="fragment">Basé sur <a href="https://www.datadoghq.com/blog/engineering/php-8-observability-baked-right-in/">l'Observer API</a></li>
+					</ul>
+				</section>
 
 				<section data-auto-animate data-auto-animate-restart>
 					<h3 data-id="title">Etape 3&nbsp: Installer les packages d'auto-instrumentation</h3>
-				</section>				
+				</section>
+
+				<section data-auto-animate>
+					<h3 data-id="title">Etape 3&nbsp: Installer les packages d'auto-instrumentation</h3>
+					<div>Liste des packages d'Instrumentation OpenTelemetry</div>
+					<small><a href="https://packagist.org/search/?query=open-telemetry&tags=instrumentation">https://packagist.org/search/?query=open-telemetry&tags=instrumentation</a></small>
+				</section>
 
 				<section data-auto-animate data-auto-animate-restart>
 					<h3 data-id="title">Etape 4&nbsp: Configurer OpenTelemetry dans les applications</h3>
-				</section>				
+				</section>
 
 				<section>
 					<h3>Pourquoi la recherche de performance ?</h3>
@@ -203,6 +229,22 @@
 						<div style="display: table-cell; vertical-align: middle; padding-right: 10px;"><img src="mastodon_logotype.png" height="50" width="50"></div>
 						<div style="display: table-cell; vertical-align: middle;">@zibok@pouet.chapril.org</div>
 					</div>
+					<div style="display: table; margin-top: 1em;">
+						<div style="display: table-cell; vertical-align: top;">
+							Slides<br>
+							<img src="qrcode-slides.png" height="123px"><br>
+							<small>https://zibok.github.io/slides-opentelemetry-forumphp2024/</small>
+						</div>
+						<div style="display: table-cell; vertical-align: top;">
+							Démo<br>
+							<img src="qrcode-demo.png" height="123px"><br>
+							<small>https://github.com/zibok/demo-opentelemetry-php</small>
+						</div>
+						<div style="display: table-cell; vertical-align: top;">
+							Joind.in<br>
+							<img src="qrcode-joindin.png" height="123px"><br>
+							<small>https://joind.in/talk/c9ae6</small>
+						</div>
 				</section>
 			</div>
 		</div>
