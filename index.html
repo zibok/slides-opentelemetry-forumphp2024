@@ -31,7 +31,8 @@
 					<h3>Imaginons une application&nbsp;!</h3>
 				</section>
 				<section>
-					<img src="logo.webp" height="700px">
+					<div><img src="logo.webp" height="600px"></div>
+					<small>Image générée par DALL-E</small>
 				</section>
 				<section>
 					<h3>Comment est-on organisé ?</h3>
@@ -43,7 +44,7 @@
 					</div>
 				</section>
 				<section>
-					<h3>Comment est architecturé notre application&nbsp;?</h3>
+					<h3>Comment est architecturée notre application&nbsp;?</h3>
 				</section>
 				<section>
 					<h3>Qui connait la loi de Conway&nbsp;?</h3>
@@ -140,11 +141,27 @@
 				</section>
 
 				<section data-auto-animate data-auto-animate-restart>
-					<h3 data-id="title">Etape 2&nbsp: Installer l'extension PHP OpenTelemetry</h3>
+					<h3 data-id="title">Etape 2&nbsp: Installer les extensions PHP nécessaires</h3>
 				</section>
 
 				<section data-auto-animate>
-					<h3 data-id="title">Etape 2&nbsp: Installer l'extension PHP OpenTelemetry</h3>
+					<h3 data-id="title">Etape 2&nbsp: Installer les extensions PHP nécessaires</h3>
+					<h4 data-id="subtitle">3 transports possibles pour OTLP</h4>
+					<div style="display: flex;">
+						<div data-id="box1" class="fragment" style="background: #a0a0a0; width: 300px; height: 100px; padding: 10px; margin: 10px; border-radius: 5px;"><div style="display: flex; width: 100%; height: 100px; justify-content: center; align-items: center">GRPC</div></div>
+						<div data-id="box2" class="fragment" style="background: #a0a0a0; width: 300px; height: 100px; padding: 10px; margin: 10px; border-radius: 5px;"><div style="display: flex; width: 100%; height: 100px; justify-content: center; align-items: center">HTTP / JSON</div></div>
+						<div data-id="box3" class="fragment" style="background: #adff8d; width: 300px; height: 100px; padding: 10px; margin: 10px; border-radius: 5px;"><div style="display: flex; width: 100%; height: 100px; justify-content: center; align-items: center">HTTP / PROTOBUF</div></div>
+					</div>				
+				</section>
+
+				<section data-auto-animate>
+					<h3 data-id="title">Etape 2&nbsp: Installer les extensions PHP nécessaires</h3>
+					<h4 data-id="subtitle">opentelemetry</h4>
+				</section>
+
+				<section data-auto-animate>
+					<h3 data-id="title">Etape 2&nbsp: Installer les extensions PHP nécessaires</h3>
+					<h4 data-id="subtitle">opentelemetry</h4>
 					<pre><code data-trim data-noescape>
 					&lt;?php
 
@@ -158,10 +175,11 @@
 				</section>
 
 				<section data-auto-animate>
-					<h3 data-id="title">Etape 2&nbsp: Installer l'extension PHP OpenTelemetry</h3>
+					<h3 data-id="title">Etape 2&nbsp: Installer les extensions PHP nécessaires</h3>
+					<h4 data-id="subtitle">opentelemetry</h4>
 					<ul>
 						<li class="fragment">Nécessite PHP 8.0+</li>
-						<li class="fragment">Basé sur <a href="https://www.datadoghq.com/blog/engineering/php-8-observability-baked-right-in/">l'Observer API</a></li>
+						<li class="fragment">Basé sur l'Observer API <small>(<a href="https://www.datadoghq.com/blog/engineering/php-8-observability-baked-right-in/">https://www.datadoghq.com/blog/engineering/php-8-observability-baked-right-in/</a>)</small></li>
 					</ul>
 				</section>
 
@@ -199,9 +217,6 @@
 				<section>
 					<h3>Et surtout 3.</h3>
 					<div>Augmenter la durée de vie du matériel</div>
-				</section>
-				<section>
-					<h3>Qui connait la loi de Moore&nbsp;?</h3>
 				</section>
 				<section>
 					<h3>Loi de Moore</h3>
